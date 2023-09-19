@@ -2,3 +2,11 @@
     width: 650px;
     margin: 0 auto;
 }
+
+a{
+    color: #3F82A8;
+}
+
+a:hover{/*擬似クラス　:hover（マウスを重ねた時）*/
+    text-decoration: none;
+}
