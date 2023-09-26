@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+* {
+    cursor: url(../image/ikamusume.png), auto;
+}
+
+.main {
+    width: 650px;
+    margin: 0 auto;
+}
+
+a {
+    color: #3F82A8;
+}
+
+a:hover {
+    /*擬似クラス　:hover（マウスを重ねた時）*/
+    text-decoration: none;
+}
+
+/*footerの編集*/
+html {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+a {
+    color: #777d88;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c2b7b7;
+}
+
+.flex {
+    display: flex;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #35363b;
+}
+
+.footer {
+    padding: 2rem;
+    font-size: 15px;
+    color: #9ca3af;
+    background: #1d1e22;
+}
+
+.footer__navi {
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.footer__navi li {
+    display: inline-block;
+}
+
+.footer__navi li:not(:last-child) {
+    margin-right: 16px;
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .md-flex {
+        display: flex;
+    }
+
+    .md-justify-between {
+        justify-content: space-between;
+    }
+
+    .copyright {
+        text-align: left;
+    }
+}
+
+/*ヘッダーの編集*/
+.header {
+    padding: 16px 24px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.header-item--contact {
+    background-color: #e6e6e6;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 6px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-photo {
+    background-image: url("../image/IMG_4529.jpeg");
+    background-size: cover;
+    background-position: 50%;
+    text-align: center;
+    padding: 50px 10px 50px 0;
+}
+
+.bg_photo-photo {
+    border: solid 1px;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+}

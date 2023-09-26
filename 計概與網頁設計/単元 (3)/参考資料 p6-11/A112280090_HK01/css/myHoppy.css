@@ -1,0 +1,227 @@
+* {
+    cursor: url(../image/ikamusume.png), auto;
+}
+
+/*ヘッダーの編集*/
+.header {
+    padding: 16px 24px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.header-item--contact {
+    background-color: #e6e6e6;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 6px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*footerの編集*/
+html {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-mokuzi{
+    color: #1d1e22;
+}
+.header-list {
+    color: #777d88;
+    text-decoration: none;
+}
+
+.header-list:hover {
+    color: #c2b7b7;
+}
+
+.list-mokuzi {
+    color: #000000;
+    text-decoration: none;
+}
+
+.list-mokuzi:hover {
+    color: #f12e2e;
+}
+
+.flex {
+    display: flex;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #35363b;
+}
+
+.footer {
+    padding: 2rem;
+    font-size: 15px;
+    color: #9ca3af;
+    background: #1d1e22;
+}
+
+.footer__navi {
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.footer__navi li {
+    display: inline-block;
+}
+
+.footer__navi li:not(:last-child) {
+    margin-right: 16px;
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .md-flex {
+        display: flex;
+    }
+
+    .md-justify-between {
+        justify-content: space-between;
+    }
+
+    .copyright {
+        text-align: left;
+    }
+}
+
+.heading-h1 {
+    padding: 0.4em 0.5em;
+    /*文字の上下 左右の余白*/
+    color: #494949;
+    /*文字色*/
+    background: #f4f4f4;
+    /*背景色*/
+    border-left: solid 5px #7db4e6;
+    /*左線*/
+    border-bottom: solid 3px #d7d7d7;
+    margin-bottom: 10px;
+    /*下線*/
+}
+
+/* 目次のスタイル */
+.entry-content .table-of-contents {
+    position: fixed;
+    top: 40%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    border: 2px dashed #cd853f;
+    background-color: #fff5ee;
+    border-radius: 10px;
+    padding-right: 50px;
+    padding-top: 10px;
+    box-shadow: 0 0 0 8px #fff5ee;
+    z-index: 1000;
+    /* 目次が他の要素の上に表示されるように */
+}
+
+/* 目次内部のスタイルはそのまま */
+
+/* 目次の表示文字のスタイル */
+.entry-content .table-of-contents::before {
+    font-size: 1rem;
+    white-space: pre-wrap;
+    content: "                [ 目次 ]";
+    /* 表示文字 */
+    color: #cd853f;
+    /* 文字色 */
+    position: relative;
+}
+
+/* 目次のスタイル修正 */
+.table-of-contents li::before {
+    font-family: "blogicon";
+    content: "\f02d";
+    /* はてなブログアイコン */
+    color: #cd853f;
+    /* アイコンの色 */
+    position: relative;
+    left: -10px;
+}
+
+/* その他のスタイルはそのまま */
+
+/* 目次のスタイル修正 */
+.table-of-contents li ul li::before {
+    display: none;
+}
+
+/* その他のスタイルはそのまま */
+.table-of-contents li {
+    list-style-type: none;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-bottom: 0.5rem;
+}
+
+.table-of-contents ul {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.table-of-contents li ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    list-style-type: disc;
+}
+
+/*中見出しの前は黒丸*/
+.table-of-contents li a,
+.table-of-contents li a:visited {
+    color: #454545;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+/*リンクの色、下線の有無*/
+.table-of-contents li a:hover {
+    text-decoration: underline;
+}
+
+/*マウスオーバーで下線を表示*/
+.table-of-contents ul ul {
+    display: none;
+}
+
+/*見出し3階層目を表示しない*/
+
+h2 {
+    color: #6594e0;/*文字色*/
+    /*線の種類（点線）2px 線色*/
+    border-bottom: dashed 2px #6594e0;
+  }
+
