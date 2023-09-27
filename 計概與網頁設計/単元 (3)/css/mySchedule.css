@@ -210,3 +210,23 @@ h2:after {
     bottom: -3px;
     width: 10%;
 }
+
+.class-list {
+    background-color: #CCCCCC;
+}
+
+.class-time {
+    width: 150px;
+    text-align: center;
+    background-color: #DDEEFF;
+}
+
+.class-color {
+    background-color: #AACCEE;
+    text-align: center;
+}
+
+.class-blue {
+    background-color: #DDEEFF;
+    text-align: center;
+}
