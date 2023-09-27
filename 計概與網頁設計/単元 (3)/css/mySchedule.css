@@ -1,5 +1,5 @@
 * {
-    cursor: url(../image/ikamusume.png), auto;
+    cursor: url(../image/mouseicon_02.png), auto;
 }
 
 /*ヘッダーの編集*/
@@ -133,7 +133,7 @@ hr {
 }
 
 .panel-primary {
-    padding-left: 380px;
+    padding-left: 370px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
