@@ -2,7 +2,87 @@
     cursor: url(../image/mouseicon_02.png), auto;
 }
 
-/*ヘッダーの編集*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    padding: 16px 24px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.header-list {
+    color: #777d88;
+    text-decoration: none;
+}
+
+.header-list:hover {
+    color: #c2b7b7;
+}
+
+.panel-primary {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 2px solid #193C50;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(51, 51, 102, 0.5);
+}
+
+.class-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.class-link:hover {
+    color: #ff3636;
+}
+
+.class-time {
+    width: 150px;
+    text-align: center;
+    background-color: #DDEEFF;
+}
+
+.footer {
+    padding: 2rem;
+    font-size: 15px;
+    color: #9ca3af;
+    background: #1d1e22;
+    text-align: center;
+}
+
+.footer__navi {
+    margin-bottom: 2rem;
+}
+
+.footer__navi li {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.footer__logo img {
+    width: 180px;
+    height: 40px;
+    alt: "USC Logo";
+}
+
+
 .header {
     padding: 16px 24px;
     background-color: #fafafa;
@@ -32,33 +112,6 @@
     border-radius: 6px;
 }
 
-.text-center {
-    text-align: center;
-}
-
-/*footerの編集*/
-html {
-    font-family: sans-serif;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-
-.flex {
-    display: flex;
-}
-
-hr {
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #35363b;
-}
-
 .footer {
     padding: 2rem;
     font-size: 15px;
@@ -77,35 +130,6 @@ hr {
 
 .footer__navi li:not(:last-child) {
     margin-right: 16px;
-}
-
-.footer__logo {
-    display: inline-block;
-    margin-bottom: 1rem;
-}
-
-@media (min-width: 768px) {
-    .md-flex {
-        display: flex;
-    }
-
-    .md-justify-between {
-        justify-content: space-between;
-    }
-
-    .copyright {
-        text-align: left;
-    }
-}
-
-@media (max-width:767px) {
-    .nav.navbar-nav.navbar-right {
-        display: none;
-    }
-
-    .navbar-toggle.collapsed {
-        display: none;
-    }
 }
 
 .header-list {
@@ -136,10 +160,18 @@ hr {
     padding-left: 370px;
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: #f9f9f9;
+    border: 2px solid #193C50;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(51, 51, 102, 0.5);
 }
 
 .panel-heading {
-    padding: 3px 15px;
+    padding: 10px 15px;
+    background-color: #193C50;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .panel-info {
@@ -148,31 +180,44 @@ hr {
 }
 
 .pagination select {
-    padding-top: 0px;
+    padding-top: 2px;
     margin-bottom: -2px;
 }
 
 .pagination input {
-    padding-top: 0px;
+    padding-top: 2px;
     margin-top: -2px;
     margin-bottom: -3px;
     width: 40px;
     text-align: center;
 }
 
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #193C50;
+    padding: 10px;
+    text-align: center;
+}
+
 .table>tbody>tr:hover>td {
-    background-color: #f5f5f5;
+    background-color: #D0D0FF;
 }
 
 .table>tbody>tr.active>td {
-    background-color: #D0D0FF;
+    background-color: #91BBE5;
+    color: white;
 }
 
 .table>tbody>tr>th {
     color: white;
     background-color: #193C50;
     vertical-align: middle;
-    text-align: center;
 }
 
 h1 {
@@ -216,30 +261,32 @@ h2:after {
     text-align: center;
 }
 
-.class-list-sleep{
+.class-list-sleep {
     background-color: #bebebe;
     text-align: center;
 }
+
 .class-time {
     width: 150px;
     text-align: center;
     background-color: #DDEEFF;
 }
 
-.class-list-lunch{
+.class-list-lunch {
     background-color: #ffff70;
     text-align: center;
 }
 
-.class-list-work{
+.class-list-work {
     background-color: #80ff8b;
     text-align: center;
 }
 
-.class-list-school{
+.class-list-school {
     background-color: rgb(255, 144, 144);
     text-align: center;
 }
+
 .class-color {
     background-color: #AACCEE;
     text-align: center;
@@ -250,7 +297,7 @@ h2:after {
     text-align: center;
 }
 
-.class-list-code{
+.class-list-code {
     text-align: center;
     background-color: rgb(250, 187, 69);
 }
