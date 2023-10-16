@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;/*１つ全体　２つ上下：左右　３つ上：右左：下　4つ上：右：下：左*/
+    box-sizing:border-box;
+}/*リセットCSS*/
+
+.wrap{
+    padding: 32px 0 64px;
+    background-color: #54B1E5;/*キーワード・・16進数・RGB*/
+}
+
+.content{
+    width: 100%;
+    max-width: 600px;
+    margin:0 auto;
+    padding: 16px;
+    background-color: #fff;
+}
+
+h1{
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text{
+    margin: 16px 0 0; /*外側の余白*/
+    /*1つ上下左右　2つ上下：左右　３つ上：右左：下　４つ上：右：下：左*/
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.text-center{
+    text-align: center;/*align(揃える)*/
+}
+.heading-1{
+    font-size: 32px;
+    font-style: normal;
+}
+
+.heading-2{
+    font-size: 24px;
+}
+
+.heading-3{
+    font-size: 20px;
+}
+
+.profile-image{
+    margin: 16px 0 0;
+    text-align: center;
+}
+
+.profile-image img{
+    width: 150;
+    height: auto;
+    border-radius: 50%;/*radius(半径-丸みを持たす)*/
+}
+
+a{
+    color: #3F82A8;
+}
+
+a:hover{/*擬似クラス　:hover（マウスを重ねた時）*/
+    text-decoration: none;
+}
+.heading-margin{
+    margin-top: 32px;/*top,right,bottom,leftでMarginの〇〇側指定*/
+}
+
+.box{
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;/*上下余白なし*/
+    padding: 8px;
+    background-color: #E1F0F9;
+}
+
+ul,ol{
+    margin: 0 0 0 1.5em;/*1.5em＝24px*/
+}
+
+box-margin{
+    margin-top: 16px;
+}
