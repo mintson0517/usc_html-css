@@ -2,7 +2,6 @@
     cursor: url(../image/mouseicon.png), auto;
 }
 
-/*ヘッダーの編集*/
 .header {
     padding: 16px 24px;
     background-color: #fafafa;
@@ -43,7 +42,7 @@
 .contents li a {
     text-decoration: none;
     color: #333;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 .contents li a::after {
@@ -51,16 +50,16 @@
     display: block;
     width: 0;
     height: 2px;
-    background-color: #007bff; 
-    transition: width 0.3s ease; 
+    background-color: #007bff;
+    transition: width 0.3s ease;
 }
 
 .contents li a:hover {
-    color: #007bff; 
+    color: #007bff;
 }
 
 .contents li a:hover::after {
-    width: 100%; 
+    width: 100%;
 }
 
 
@@ -75,7 +74,6 @@
     text-align: center;
 }
 
-/*footerの編集*/
 html {
     font-family: sans-serif;
 }
@@ -86,9 +84,10 @@ ul {
     margin: 0;
 }
 
-.list-mokuzi{
+.list-mokuzi {
     color: #1d1e22;
 }
+
 .header-list {
     color: #777d88;
     text-decoration: none;
@@ -158,19 +157,13 @@ hr {
 
 .heading-h1 {
     padding: 0.4em 0.5em;
-    /*文字の上下 左右の余白*/
     color: #494949;
-    /*文字色*/
     background: #f4f4f4;
-    /*背景色*/
     border-left: solid 5px #7db4e6;
-    /*左線*/
     border-bottom: solid 3px #d7d7d7;
     margin-bottom: 10px;
-    /*下線*/
 }
 
-/* 目次のスタイル */
 .entry-content .table-of-contents {
     position: fixed;
     top: 40%;
@@ -183,41 +176,28 @@ hr {
     padding-top: 10px;
     box-shadow: 0 0 0 8px #fff5ee;
     z-index: 1000;
-    /* 目次が他の要素の上に表示されるように */
 }
 
-/* 目次内部のスタイルはそのまま */
-
-/* 目次の表示文字のスタイル */
 .entry-content .table-of-contents::before {
     font-size: 1rem;
     white-space: pre-wrap;
     content: "                [ 目次 ]";
-    /* 表示文字 */
     color: #cd853f;
-    /* 文字色 */
     position: relative;
 }
 
-/* 目次のスタイル修正 */
 .table-of-contents li::before {
     font-family: "blogicon";
     content: "\f02d";
-    /* はてなブログアイコン */
     color: #cd853f;
-    /* アイコンの色 */
     position: relative;
     left: -10px;
 }
 
-/* その他のスタイルはそのまま */
-
-/* 目次のスタイル修正 */
 .table-of-contents li ul li::before {
     display: none;
 }
 
-/* その他のスタイルはそのまま */
 .table-of-contents li {
     list-style-type: none;
     font-size: 1.2rem;
@@ -238,7 +218,6 @@ hr {
     list-style-type: disc;
 }
 
-/*中見出しの前は黒丸*/
 .table-of-contents li a,
 .table-of-contents li a:visited {
     color: #454545;
@@ -246,35 +225,30 @@ hr {
     text-decoration: none;
 }
 
-/*リンクの色、下線の有無*/
 .table-of-contents li a:hover {
     text-decoration: underline;
 }
 
-/*マウスオーバーで下線を表示*/
 .table-of-contents ul ul {
     display: none;
 }
 
-/*見出し3階層目を表示しない*/
-
 h2 {
-    color: #6594e0;/*文字色*/
-    /*線の種類（点線）2px 線色*/
+    color: #6594e0;
     border-bottom: dashed 2px #6594e0;
-  }
+}
 
-  a[href="myHobby.html"] {
+a[href="myHobby.html"] {
     display: inline-block;
-    background-color: #007bff; /* ボタンの背景色 */
-    color: #fff; /* テキストの色 */
-    padding: 10px 20px; /* ボタンの内側の余白 */
-    text-decoration: none; /* 下線を削除 */
-    border-radius: 5px; /* ボタンの角を丸める */
-    transition: background-color 0.3s ease; /* 背景色の変化をアニメーション化 */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 
 }
 
 a[href="myHobby.html"]:hover {
-    background-color: #0056b3; /* ホバー時の背景色 */
+    background-color: #0056b3;
 }

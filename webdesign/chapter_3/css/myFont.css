@@ -2,7 +2,6 @@
     cursor: url(../image/ka-suru.png), auto;
 }
 
-/*ヘッダーの編集*/
 .header {
     padding: 16px 24px;
     background-color: #fafafa;
@@ -36,7 +35,6 @@
     text-align: center;
 }
 
-/*footerの編集*/
 html {
     font-family: sans-serif;
 }
